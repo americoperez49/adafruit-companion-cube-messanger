@@ -1,0 +1,17 @@
+{
+  "hosting": {
+    "site": "americo-cube-companion",
+    "public": "dist/adafruit-io-cube-app",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}

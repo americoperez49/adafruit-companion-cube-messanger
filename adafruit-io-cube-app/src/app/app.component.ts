@@ -34,12 +34,12 @@ export class AppComponent implements OnInit {
   mouse = false;
   color = 'cyan';
 
-  wordsUrl = 'https://io.adafruit.com/api/v2/burneremail/feeds/cube-words/data';
+  wordsUrl = 'Feed';
   pixelsUrl =
-    'https://io.adafruit.com/api/v2/burneremail/feeds/cube-pixels/data';
+    'Feed';
   statusUrl =
-    'https://io.adafruit.com/api/v2/burneremail/feeds/message-status/data/last?include=value';
-  adafruit_io_key = 'aio_IawR27dccZM1NoOda4P00rRe7gI0';
+    'Feed';
+  adafruit_io_key = 'API Key';
 
   cubeMessage = '';
   messageStatus = '';
@@ -52,16 +52,16 @@ export class AppComponent implements OnInit {
 
   mouseDragStart($event: any) {
     this.mouse = true;
-    console.log(this.mouse);
+    // console.log(this.mouse);
   }
 
   mouseDragEnd($event: any) {
     this.mouse = false;
-    console.log(this.mouse);
+    // console.log(this.mouse);
   }
 
   check(box: any) {
-    console.log();
+    // console.log();
     if (this.mouse) {
       box.checked = !box.checked;
     }
@@ -152,10 +152,14 @@ export class AppComponent implements OnInit {
       'Content-Type': 'application/json',
       'X-AIO-Key':this.adafruit_io_key
     }
-    this.http.get<any>(this.statusUrl,{headers:headers}).subscribe((value)=>{
-      console.log()
-      this.messageStatus = value.value
+    this.http.get<any>(this.statusUrl+"/last?include=value",{headers:headers}).subscribe(
+      (response)=>{
+      this.messageStatus = response.value
       this.isLoading2(false);
-    })
+    }),
+    (error:any) => {                              //Error callback
+      console.error('Request failed with error')
+      alert(error);
+    }
   };
 }
