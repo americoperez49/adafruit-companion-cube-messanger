@@ -16,21 +16,6 @@ export class AppComponent implements OnInit {
   @ViewChild('label2') buttonLabel2!: any;
   @ViewChild('loading2') loadingIndicator2!: any;
 
-  config = {
-    host: 'io.adafruit.com',
-    port: 8883,
-    path: 'ws',
-    ssl: true,
-
-    user: 'burneremail',
-    pass: 'aio_IawR27dccZM1NoOda4P00rRe7gI0',
-
-    subscribe: ['burneremail/feeds/message-status'],
-    publish: ['burneremail/feeds/message-status'],
-
-    keepalive: 10,
-  };
-
   mouse = false;
   color = 'cyan';
 
@@ -39,7 +24,7 @@ export class AppComponent implements OnInit {
     'Feed';
   statusUrl =
     'Feed';
-  adafruit_io_key = 'API Key';
+  adafruit_io_key = 'Key';
 
   cubeMessage = '';
   messageStatus = '';
