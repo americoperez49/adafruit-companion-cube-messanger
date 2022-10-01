@@ -1,0 +1,118 @@
+<div class="body" (mousedown)="mouseDragStart($event)" (mouseup)="mouseDragEnd($event)">
+  <div class="container">
+    <div class="log pixel-number"></div>
+    <div class="log drag"></div>
+    <div class="panel-title">Draw a picture!</div>
+    <div class="panel-wrap">
+      <div class="panel-row">
+        <input (pointerover)='check($event.target)' type="checkbox" class="pixel" data-pixel-y=0 data-pixel-x=0 >
+        <input (pointerover)='check($event.target)' type="checkbox" class="pixel" data-pixel-y=1 data-pixel-x=0 >
+        <input (pointerover)='check($event.target)' type="checkbox" class="pixel" data-pixel-y=2 data-pixel-x=0 >
+        <input (pointerover)='check($event.target)' type="checkbox" class="pixel" data-pixel-y=3 data-pixel-x=0 >
+        <input (pointerover)='check($event.target)' type="checkbox" class="pixel" data-pixel-y=4 data-pixel-x=0 >
+        <input (pointerover)='check($event.target)' type="checkbox" class="pixel" data-pixel-y=5 data-pixel-x=0 >
+        <input (pointerover)='check($event.target)' type="checkbox" class="pixel" data-pixel-y=6 data-pixel-x=0 >
+        <input (pointerover)='check($event.target)' type="checkbox" class="pixel" data-pixel-y=7 data-pixel-x=0 >
+      </div>
+      <div class="panel-row">
+        <input (pointerover)='check($event.target)' type="checkbox" class="pixel" data-pixel-y=0 data-pixel-x=1 >
+        <input (pointerover)='check($event.target)' type="checkbox" class="pixel" data-pixel-y=1 data-pixel-x=1 >
+        <input (pointerover)='check($event.target)' type="checkbox" class="pixel" data-pixel-y=2 data-pixel-x=1 >
+        <input (pointerover)='check($event.target)' type="checkbox" class="pixel" data-pixel-y=3 data-pixel-x=1 >
+        <input (pointerover)='check($event.target)' type="checkbox" class="pixel" data-pixel-y=4 data-pixel-x=1 >
+        <input (pointerover)='check($event.target)' type="checkbox" class="pixel" data-pixel-y=5 data-pixel-x=1 >
+        <input (pointerover)='check($event.target)' type="checkbox" class="pixel" data-pixel-y=6 data-pixel-x=1 >
+        <input (pointerover)='check($event.target)' type="checkbox" class="pixel" data-pixel-y=7 data-pixel-x=1 >
+      </div>
+      <div class="panel-row">
+        <input (pointerover)='check($event.target)' type="checkbox" class="pixel" data-pixel-y=0 data-pixel-x=2 >
+        <input (pointerover)='check($event.target)' type="checkbox" class="pixel" data-pixel-y=1 data-pixel-x=2 >
+        <input (pointerover)='check($event.target)' type="checkbox" class="pixel" data-pixel-y=2 data-pixel-x=2 >
+        <input (pointerover)='check($event.target)' type="checkbox" class="pixel" data-pixel-y=3 data-pixel-x=2 >
+        <input (pointerover)='check($event.target)' type="checkbox" class="pixel" data-pixel-y=4 data-pixel-x=2 >
+        <input (pointerover)='check($event.target)' type="checkbox" class="pixel" data-pixel-y=5 data-pixel-x=2 >
+        <input (pointerover)='check($event.target)' type="checkbox" class="pixel" data-pixel-y=6 data-pixel-x=2 >
+        <input (pointerover)='check($event.target)' type="checkbox" class="pixel" data-pixel-y=7 data-pixel-x=2 >
+      </div>
+      <div class="panel-row">
+        <input (pointerover)='check($event.target)' type="checkbox" class="pixel" data-pixel-y=0 data-pixel-x=3 >
+        <input (pointerover)='check($event.target)' type="checkbox" class="pixel" data-pixel-y=1 data-pixel-x=3 >
+        <input (pointerover)='check($event.target)' type="checkbox" class="pixel" data-pixel-y=2 data-pixel-x=3 >
+        <input (pointerover)='check($event.target)' type="checkbox" class="pixel" data-pixel-y=3 data-pixel-x=3 >
+        <input (pointerover)='check($event.target)' type="checkbox" class="pixel" data-pixel-y=4 data-pixel-x=3 >
+        <input (pointerover)='check($event.target)' type="checkbox" class="pixel" data-pixel-y=5 data-pixel-x=3 >
+        <input (pointerover)='check($event.target)' type="checkbox" class="pixel" data-pixel-y=6 data-pixel-x=3 >
+        <input (pointerover)='check($event.target)' type="checkbox" class="pixel" data-pixel-y=7 data-pixel-x=3 >
+      </div>
+      <div class="panel-row">
+        <input (pointerover)='check($event.target)' type="checkbox" class="pixel" data-pixel-y=0 data-pixel-x=4 >
+        <input (pointerover)='check($event.target)' type="checkbox" class="pixel" data-pixel-y=1 data-pixel-x=4 >
+        <input (pointerover)='check($event.target)' type="checkbox" class="pixel" data-pixel-y=2 data-pixel-x=4 >
+        <input (pointerover)='check($event.target)' type="checkbox" class="pixel" data-pixel-y=3 data-pixel-x=4 >
+        <input (pointerover)='check($event.target)' type="checkbox" class="pixel" data-pixel-y=4 data-pixel-x=4 >
+        <input (pointerover)='check($event.target)' type="checkbox" class="pixel" data-pixel-y=5 data-pixel-x=4 >
+        <input (pointerover)='check($event.target)' type="checkbox" class="pixel" data-pixel-y=6 data-pixel-x=4 >
+        <input (pointerover)='check($event.target)' type="checkbox" class="pixel" data-pixel-y=7 data-pixel-x=4 >
+      </div>
+      <div class="panel-row">
+        <input (pointerover)='check($event.target)' type="checkbox" class="pixel" data-pixel-y=0 data-pixel-x=5 >
+        <input (pointerover)='check($event.target)' type="checkbox" class="pixel" data-pixel-y=1 data-pixel-x=5 >
+        <input (pointerover)='check($event.target)' type="checkbox" class="pixel" data-pixel-y=2 data-pixel-x=5 >
+        <input (pointerover)='check($event.target)' type="checkbox" class="pixel" data-pixel-y=3 data-pixel-x=5 >
+        <input (pointerover)='check($event.target)' type="checkbox" class="pixel" data-pixel-y=4 data-pixel-x=5 >
+        <input (pointerover)='check($event.target)' type="checkbox" class="pixel" data-pixel-y=5 data-pixel-x=5 >
+        <input (pointerover)='check($event.target)' type="checkbox" class="pixel" data-pixel-y=6 data-pixel-x=5 >
+        <input (pointerover)='check($event.target)' type="checkbox" class="pixel" data-pixel-y=7 data-pixel-x=5 >
+      </div>
+      <div class="panel-row">
+        <input (pointerover)='check($event.target)' type="checkbox" class="pixel" data-pixel-y=0 data-pixel-x=6 >
+        <input (pointerover)='check($event.target)' type="checkbox" class="pixel" data-pixel-y=1 data-pixel-x=6 >
+        <input (pointerover)='check($event.target)' type="checkbox" class="pixel" data-pixel-y=2 data-pixel-x=6 >
+        <input (pointerover)='check($event.target)' type="checkbox" class="pixel" data-pixel-y=3 data-pixel-x=6 >
+        <input (pointerover)='check($event.target)' type="checkbox" class="pixel" data-pixel-y=4 data-pixel-x=6 >
+        <input (pointerover)='check($event.target)' type="checkbox" class="pixel" data-pixel-y=5 data-pixel-x=6 >
+        <input (pointerover)='check($event.target)' type="checkbox" class="pixel" data-pixel-y=6 data-pixel-x=6 >
+        <input (pointerover)='check($event.target)' type="checkbox" class="pixel" data-pixel-y=7 data-pixel-x=6 >
+      </div>
+      <div class="panel-row">
+        <input (pointerover)='check($event.target)' type="checkbox" class="pixel" data-pixel-y=0 data-pixel-x=7 >
+        <input (pointerover)='check($event.target)' type="checkbox" class="pixel" data-pixel-y=1 data-pixel-x=7 >
+        <input (pointerover)='check($event.target)' type="checkbox" class="pixel" data-pixel-y=2 data-pixel-x=7 >
+        <input (pointerover)='check($event.target)' type="checkbox" class="pixel" data-pixel-y=3 data-pixel-x=7 >
+        <input (pointerover)='check($event.target)' type="checkbox" class="pixel" data-pixel-y=4 data-pixel-x=7 >
+        <input (pointerover)='check($event.target)' type="checkbox" class="pixel" data-pixel-y=5 data-pixel-x=7 >
+        <input (pointerover)='check($event.target)' type="checkbox" class="pixel" data-pixel-y=6 data-pixel-x=7 >
+        <input (pointerover)='check($event.target)' type="checkbox" class="pixel" data-pixel-y=7 data-pixel-x=7 >
+      </div>
+    </div>
+  
+    <div class="color-picker">
+      <input type="radio" (click)="chooseColor($event.target)" name="chosenColor" class="picker cyan" checked>
+      <input type="radio" (click)="chooseColor($event.target)" name="chosenColor" class="picker purple">
+      <input type="radio" (click)="chooseColor($event.target)" name="chosenColor" class="picker blue">
+      <input type="radio" (click)="chooseColor($event.target)" name="chosenColor" class="picker gold">
+      <input type="radio" (click)="chooseColor($event.target)" name="chosenColor" class="picker amber">
+      <input type="radio" (click)="chooseColor($event.target)" name="chosenColor" class="picker pink">
+      <input type="radio" (click)="chooseColor($event.target)" name="chosenColor" class="picker jade">
+    </div>
+  
+    <input  [value]="cubeMessage" (change)="updateCubeMessage($event.target)" type="type" id="cube-message" name="mess" placeholder="message">
+    <button id="dance" (click)="handleSend()">
+      <span #label id="label" class="cool">send to cube</span>
+      <div #loading id="loading" class="load-3 hidden">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+      </div>
+    </button>
+    <input  [value]="messageStatus" type="type" id="cube-message" name="mess" placeholder="message-status">
+    <button id="dance" (click)="getMessageStatus()">
+      <span #label2 id="label" class="cool">get message status</span>
+      <div #loading2 id="loading" class="load-3 hidden">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+      </div>
+    </button>
+  </div>
+</div>
